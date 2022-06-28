@@ -1,0 +1,15 @@
+.about {
+  padding-top: 0;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

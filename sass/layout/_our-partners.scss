@@ -1,0 +1,35 @@
+.our-partners-list {
+  display: flex;
+}
+.our-partners__item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-partners__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.our-partners__icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--social-icon-color);
+
+  .our-partners__link:hover &,
+  .our-partners__link:focus & {
+    fill: var(--accent-color);
+  }
+}
