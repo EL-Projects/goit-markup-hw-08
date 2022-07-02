@@ -37,7 +37,7 @@
                 >Портфолио</a
               >
             </li>
-            <li class="header-item">
+            <li class="header-nav__item">
               <a href="" class="header-nav__link link">Контакты</a>
             </li>
           </ul>
@@ -92,8 +92,7 @@
               <a class="mobile-menu__link link" href="#">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="mobile-menu-contacts">
+
           <ul class="mobile-menu-contacts-list list">
             <li class="mobile-menu-contacts__item">
               <a
@@ -103,14 +102,13 @@
                 +38 096 111 11 11</a
               >
             </li>
-            <li class="mobile-menu-contact__item">
+            <li class="mobile-menu-contacts__item">
               <a class="mobile-menu-contacts__link-mail link" href="mailto:">
                 info@devstudio.com</a
               >
             </li>
           </ul>
-        </div>
-        <div class="mobile-menu-social">
+
           <ul class="mobile-menu-social-list list">
             <li class="mobile-menu-social__item">
               <a href="#" class="mobile-menu-social__link link">Instagram</a>
@@ -130,16 +128,16 @@
     </header>
     <main>
       <!-- Secttion 1 Main -->
-      <!-- <section class="section main">
+      <section class="section main">
         <div class="container">
           <h1 class="main-head">Эффективные решения для вашего бизнеса</h1>
           <button class="main__button btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Section 2 Hero-->
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h2 class="visually-hidden">Преимущество</h2>
           <ul class="hero-list list">
@@ -193,7 +191,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 3 About-->
       <!-- <section class="section about">
         <div class="container">
@@ -223,13 +221,41 @@
         </div>
       </section> -->
       <!-- Section 4 Masters-->
-      <!-- <section class="section masters">
+      <section class="section masters">
         <div class="container">
           <h2 class="masters-head">Наша команда</h2>
           <ul class="masters-list list">
             <li class="masters__item">
-              <img src="./images/img-team-1.jpg" alt="специалист" width="270" />
-              <div class="masters__descrtiption">
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-team-1-mobile@1x.jpg 1x,
+                    ./images/img-team-1-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-1-tablet@1x.jpg 1x,
+                    ./images/img-team-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-1@1x.jpg 1x,
+                    ./images/img-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="masters__image"
+                  src="./images/img-team-1-mobile@1x.jpg"
+                  alt="специалист"
+                  width="450"
+                />
+              </picture>
+              <div class="masters__description">
                 <h3 class="masters__title">Игорь Демьяненко</h3>
                 <p lang="en" class="masters__text">Product Designer</p>
 
@@ -285,8 +311,36 @@
               </div>
             </li>
             <li class="masters__item">
-              <img src="./images/img-team-2.jpg" alt="специалист" width="270" />
-              <div class="masters__descrtiption">
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-team-2-mobile@1x.jpg 1x,
+                    ./images/img-team-2-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-2-tablet@1x.jpg 1x,
+                    ./images/img-team-2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-2@1x.jpg 1x,
+                    ./images/img-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="masters__image"
+                  src="./images/img-team-2-mobile@1x.jpg"
+                  alt="специалист"
+                  width="450"
+                />
+              </picture>
+              <div class="masters__description">
                 <h3 class="masters__title">Ольга Репина</h3>
                 <p lang="en" class="masters__text">Frontend Developer</p>
                 <ul class="masters-social list">
@@ -338,8 +392,36 @@
               </div>
             </li>
             <li class="masters__item">
-              <img src="./images/img-team-3.jpg" alt="специалист" width="270" />
-              <div class="masters__descrtiption">
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-team-3-mobile@1x.jpg 1x,
+                    ./images/img-team-3-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-3-tablet@1x.jpg 1x,
+                    ./images/img-team-3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-3@1x.jpg 1x,
+                    ./images/img-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="masters__image"
+                  src="./images/img-team-3-mobile@1x.jpg"
+                  alt="специалист"
+                  width="450"
+                />
+              </picture>
+              <div class="masters__description">
                 <h3 class="masters__title">Николай Тарасов</h3>
                 <p lang="en" class="masters__text">Marketing</p>
                 <ul class="masters-social list">
@@ -391,8 +473,36 @@
               </div>
             </li>
             <li class="masters__item">
-              <img src="./images/img-team-4.jpg" alt="специалист" width="270" />
-              <div class="masters__descrtiption">
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-team-4-mobile@1x.jpg 1x,
+                    ./images/img-team-4-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-4-tablet@1x.jpg 1x,
+                    ./images/img-team-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-team-4@1x.jpg 1x,
+                    ./images/img-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="masters__image"
+                  src="./images/img-team-4-mobile@1x.jpg"
+                  alt="специалист"
+                  width="450"
+                />
+              </picture>
+              <div class="masters__description">
                 <h3 class="masters__title">Михаил Ермаков</h3>
                 <p lang="en" class="masters__text">UI Designer</p>
                 <ul class="masters-social list">
@@ -445,9 +555,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Our partners -->
-      <!-- <section class="section our-partners">
+      <section class="section our-partners">
         <div class="container our-partners-container">
           <h2 class="our-partners-head">Постоянные клиенты</h2>
           <ul class="our-partners-list list">
@@ -495,21 +605,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left-side">
-          <a class="footer-logo link" href="./index.html"
-            ><span class="logo-blue">Web</span
-            ><span class="logo-white">Studio</span></a
-          >
           <address class="footer-contact">
+            <a class="footer-logo link" href="./index.html"
+              ><span class="logo-blue">Web</span
+              ><span class="logo-white">Studio</span></a
+            >
             <ul class="footer-contact-list list">
               <li class="footer-contact__item">
                 <a
-                  class="footer-contact__adress link"
+                  class="footer-contact__adress-link link"
                   href="https://goo.gl/maps/WrcRyUVtfEpf5qSH7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -517,20 +627,22 @@
                 >
               </li>
               <li class="footer-contact__item">
-                <a class="footer-contact__mail link" href="mailto:"
+                <a class="footer-contact__mail-link link" href="mailto:"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer-contact__item">
-                <a class="footer-contact__tel link" href="tel:+380961111111"
+                <a
+                  class="footer-contact__tel-link link"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
-        </div> -->
-    <!-- Footer socials -->
-    <!-- <div class="footer-social">
+        </div>
+        <!-- Footer socials -->
+        <div class="footer-social">
           <h2 class="footer-social__title">присоединяйтесь</h2>
           <ul class="footer-social__list list">
             <li class="footer-social__item">
@@ -562,11 +674,11 @@
               </a>
             </li>
           </ul>
-        </div> -->
-    <!-- Footer subscribe -->
-    <!-- <div class="footer-subscribe">
+        </div>
+        <!-- Footer subscribe -->
+        <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
-          <form>
+          <form class="footer-subscribe container">
             <input
               class="footer-subscribe__input"
               id="footer_subscribe_mail"
@@ -584,9 +696,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="18" height="18">
@@ -670,8 +782,9 @@
         </form>
       </div>
     </div>
-    
-    <script src="./js/modal.js"></script> -->
+
+    <script src="./js/modal.js"></script>
+    -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

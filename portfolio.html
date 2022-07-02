@@ -37,7 +37,7 @@
                 >Портфолио</a
               >
             </li>
-            <li class="header-item">
+            <li class="header-nav__item">
               <a href="" class="header-nav__link link">Контакты</a>
             </li>
           </ul>
@@ -79,10 +79,12 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./index.html">Студия</a>
+              <a class="mobile-menu__link link current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link current" href="./portfolio.html"
+              <a class="mobile-menu__link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -90,8 +92,7 @@
               <a class="mobile-menu__link link" href="#">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="mobile-menu-contacts">
+
           <ul class="mobile-menu-contacts-list list">
             <li class="mobile-menu-contacts__item">
               <a
@@ -101,14 +102,13 @@
                 +38 096 111 11 11</a
               >
             </li>
-            <li class="mobile-menu-contact__item">
+            <li class="mobile-menu-contacts__item">
               <a class="mobile-menu-contacts__link-mail link" href="mailto:">
                 info@devstudio.com</a
               >
             </li>
           </ul>
-        </div>
-        <div class="mobile-menu-social">
+
           <ul class="mobile-menu-social-list list">
             <li class="mobile-menu-social__item">
               <a href="#" class="mobile-menu-social__link link">Instagram</a>
@@ -166,6 +166,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-1.jpg"
                     alt="ноутбук"
                     width="370"
@@ -184,12 +185,13 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-2.jpg"
-                    alt="баскетбол"
+                    alt="ноутбук"
                     width="370"
                   />
                   <p class="portfolio-card__overlay-text">
@@ -198,6 +200,7 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
+
                 <div class="portfolio-card__description">
                   <h3 class="portfolio-card__title">
                     Постер New Orlean vs Golden Star
@@ -210,6 +213,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-3.jpg"
                     alt="рыбный ресторан"
                     width="370"
@@ -231,11 +235,12 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-4.jpg"
                     alt="наушники"
                     width="370"
                   />
-                  <p class="portfolio-card-overlay-text">
+                  <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -252,6 +257,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-5.jpg"
                     alt="коробки"
                     width="370"
@@ -273,6 +279,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-6.jpg"
                     alt="монитор"
                     width="370"
@@ -295,6 +302,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-7.jpg"
                     alt="книга"
                     width="370"
@@ -316,6 +324,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-8.jpg"
                     alt="бейдж"
                     width="370"
@@ -336,6 +345,7 @@
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
                   <img
+                    class="portfolio_card-img"
                     src="./images/img-portfolio-9.jpg"
                     alt="писание на ноутбуке"
                     width="370"
@@ -360,15 +370,15 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left-side">
-          <a class="footer-logo link" href="./index.html"
-            ><span class="logo-blue">Web</span
-            ><span class="logo-white">Studio</span></a
-          >
           <address class="footer-contact">
+            <a class="footer-logo link" href="./index.html"
+              ><span class="logo-blue">Web</span
+              ><span class="logo-white">Studio</span></a
+            >
             <ul class="footer-contact-list list">
               <li class="footer-contact__item">
                 <a
-                  class="footer-contact__adress link"
+                  class="footer-contact__adress-link link"
                   href="https://goo.gl/maps/WrcRyUVtfEpf5qSH7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -376,12 +386,14 @@
                 >
               </li>
               <li class="footer-contact__item">
-                <a class="footer-contact__mail link" href="mailto:"
+                <a class="footer-contact__mail-link link" href="mailto:"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer-contact__item">
-                <a class="footer-contact__tel link" href="tel:+380961111111"
+                <a
+                  class="footer-contact__tel-link link"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -425,7 +437,7 @@
         <!-- Footer subscribe -->
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
-          <form>
+          <form class="footer-subscribe container">
             <input
               class="footer-subscribe__input"
               id="footer_subscribe_mail"
