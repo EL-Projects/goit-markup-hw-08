@@ -20,7 +20,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
+      <div class="header container">
         <a class="header-logo link" href="./index.html"
           ><span class="logo-blue">Web</span
           ><span class="logo-black">Studio</span></a
@@ -193,7 +193,7 @@
         </div>
       </section>
       <!-- Section 3 About-->
-      <!-- <section class="section about">
+      <section class="section about">
         <div class="container">
           <h2 class="about-head">Чем мы занимаемся</h2>
           <ul class="about-list list">
@@ -219,19 +219,20 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- Section 4 Masters-->
+      </section>
+      <!-- Masters-->
       <section class="section masters">
-        <div class="container">
+        <div class="masters container">
           <h2 class="masters-head">Наша команда</h2>
           <ul class="masters-list list">
             <li class="masters__item">
-              <picture>
+              <picture class="masters__image">
                 <source
                   srcset="
                     ./images/img-team-1-mobile@1x.jpg 1x,
                     ./images/img-team-1-mobile@2x.jpg 2x
                   "
+                  type="jpg"
                   media="(min-width: 480px)"
                 />
                 <source
@@ -239,6 +240,7 @@
                     ./images/img-team-1-tablet@1x.jpg 1x,
                     ./images/img-team-1-tablet@2x.jpg 2x
                   "
+                  type="jpg"
                   media="(min-width: 768px)"
                 />
                 <source
@@ -246,13 +248,13 @@
                     ./images/img-team-1@1x.jpg 1x,
                     ./images/img-team-1@2x.jpg 2x
                   "
+                  type="jpg"
                   media="(min-width: 1200px)"
                 />
                 <img
                   class="masters__image"
                   src="./images/img-team-1-mobile@1x.jpg"
                   alt="специалист"
-                  width="450"
                 />
               </picture>
               <div class="masters__description">
@@ -337,7 +339,6 @@
                   class="masters__image"
                   src="./images/img-team-2-mobile@1x.jpg"
                   alt="специалист"
-                  width="450"
                 />
               </picture>
               <div class="masters__description">
@@ -418,7 +419,6 @@
                   class="masters__image"
                   src="./images/img-team-3-mobile@1x.jpg"
                   alt="специалист"
-                  width="450"
                 />
               </picture>
               <div class="masters__description">
@@ -499,7 +499,6 @@
                   class="masters__image"
                   src="./images/img-team-4-mobile@1x.jpg"
                   alt="специалист"
-                  width="450"
                 />
               </picture>
               <div class="masters__description">
@@ -609,7 +608,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="footer-left-side">
           <address class="footer-contact">
             <a class="footer-logo link" href="./index.html"
@@ -678,7 +677,7 @@
         <!-- Footer subscribe -->
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
-          <form class="footer-subscribe container">
+          <form class="footer-subscribe__container">
             <input
               class="footer-subscribe__input"
               id="footer_subscribe_mail"
@@ -784,7 +783,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -20,7 +20,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
+      <div class="header container">
         <a class="header-logo link" href="./index.html"
           ><span class="logo-blue">Web</span
           ><span class="logo-black">Studio</span></a
@@ -28,12 +28,10 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link link current"
-                >Студия</a
-              >
+              <a href="./index.html" class="header-nav__link link">Студия</a>
             </li>
             <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link link"
+              <a href="./portfolio.html" class="header-nav__link link current"
                 >Портфолио</a
               >
             </li>
@@ -79,12 +77,10 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link current" href="./index.html"
-                >Студия</a
-              >
+              <a class="mobile-menu__link link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./portfolio.html"
+              <a class="mobile-menu__link link current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -165,12 +161,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-1.jpg"
-                    alt="ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-1-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-1-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-1-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-1@1x.jpg 1x,
+                        ./images/img-portfolio-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-1.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -188,19 +206,40 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-2.jpg"
-                    alt="ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-2-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-2-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-2-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-2@1x.jpg 1x,
+                        ./images/img-portfolio-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-2.jpg"
+                      alt="баскетбол"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-
                 <div class="portfolio-card__description">
                   <h3 class="portfolio-card__title">
                     Постер New Orlean vs Golden Star
@@ -212,13 +251,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-3.jpg"
-                    alt="рыбный ресторан"
-                    width="370"
-                  />
-
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-3-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-3-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-3-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-3@1x.jpg 1x,
+                        ./images/img-portfolio-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-3.jpg"
+                      alt="рыбный ресторан"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -234,12 +294,35 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-4.jpg"
-                    alt="наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-4-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-4-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-4-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-4@1x.jpg 1x,
+                        ./images/img-portfolio-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-4.jpg"
+                      alt="наушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -256,12 +339,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-5.jpg"
-                    alt="коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-5-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-5-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-5-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-5@1x.jpg 1x,
+                        ./images/img-portfolio-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-5.jpg"
+                      alt="коробки"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -278,12 +383,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-6.jpg"
-                    alt="монитор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-6-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-6-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-6-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-6@1x.jpg 1x,
+                        ./images/img-portfolio-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-6@1x.jpg"
+                      alt="монитор"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -301,12 +428,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-7.jpg"
-                    alt="книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-7-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-7-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-7-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-7@1x.jpg 1x,
+                        ./images/img-portfolio-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-7@1x.jpg"
+                      alt="книга"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -323,12 +472,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-8.jpg"
-                    alt="бейдж"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-8-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-8-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-8-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-8@1x.jpg 1x,
+                        ./images/img-portfolio-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-8.jpg"
+                      alt="бейдж"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -344,12 +515,34 @@
             <li class="portfolio-card__item">
               <a href="" class="portfolio-card__link link">
                 <div class="portfolio-card__overlay">
-                  <img
-                    class="portfolio_card-img"
-                    src="./images/img-portfolio-9.jpg"
-                    alt="писание на ноутбуке"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-portfolio-9-mobile@1x.jpg 1x,
+                        ./images/img-portfolio-9-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-9-tablet@1x.jpg 1x,
+                        ./images/img-portfolio-9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-portfolio-9@1x.jpg 1x,
+                        ./images/img-portfolio-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-portfolio-9.jpg"
+                      alt="писание на ноутбуке"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -368,7 +561,7 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="footer-left-side">
           <address class="footer-contact">
             <a class="footer-logo link" href="./index.html"
@@ -437,7 +630,7 @@
         <!-- Footer subscribe -->
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
-          <form class="footer-subscribe container">
+          <form class="footer-subscribe__container">
             <input
               class="footer-subscribe__input"
               id="footer_subscribe_mail"
