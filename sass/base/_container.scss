@@ -1,16 +1,25 @@
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
     margin: 0 auto;
   }
+
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+
+  .header & {
+    display: flex;
+  }
+
   .footer & {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -37,33 +46,5 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-}
-
-.header {
-  display: flex;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-
-.container {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
   }
 }
