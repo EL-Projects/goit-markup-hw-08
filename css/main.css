@@ -891,7 +891,6 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-mobile@2x.jpg");
   }
 }
-
 @media screen and (min-width: 768px) {
   .main {
     margin-left: auto;
@@ -908,7 +907,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .main {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -921,10 +920,11 @@ body {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
+  .main {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main@2x.jpg");
   }
 }
+
 .main__button {
   min-width: 200px;
   margin-left: auto;

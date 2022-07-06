@@ -23,10 +23,8 @@
       ),
       url("../images/main-mobile@2x.jpg");
   }
-}
 
-@media screen and (min-width: 768px) {
-  .main {
+  @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -48,9 +46,7 @@
         url("../images/main-tablet@2x.jpg");
     }
   }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -76,7 +72,6 @@
     }
   }
 }
-
 .main__button {
   min-width: 200px;
   margin-left: auto;
