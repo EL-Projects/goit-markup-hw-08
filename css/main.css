@@ -893,7 +893,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-tablet@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--accent-background);
@@ -911,7 +911,7 @@ body {
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--accent-background);
