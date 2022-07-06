@@ -23,8 +23,10 @@
       ),
       url("../../images/main-mobile@2x.jpg");
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .main {
     max-width: 768px;
     background-image: linear-gradient(
         to right,
@@ -33,10 +35,12 @@
       ),
       url("../../images/main-tablet@1x.jpg");
   }
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -44,8 +48,10 @@
       ),
       url("../../images/main-tablet@2x.jpg");
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .main {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -56,10 +62,12 @@
       ),
       url("../../images/main@1x.jpg");
   }
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
