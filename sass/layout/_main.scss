@@ -2,14 +2,14 @@
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/main-mobile@1x.jpg");
+    url(../../images/main-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -67,7 +67,6 @@
       &:focus {
         background-color: var(--button-accent-color);
       }
-
     }
   }
   @media screen and (min-width: 1200px) {
@@ -78,7 +77,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/main@1x.jpg");
+      url("../images/main@1x.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -88,7 +87,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../images/main@2x.jpg");
+        url("../images/main@2x.jpg");
     }
   }
 }
