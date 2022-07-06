@@ -1,5 +1,6 @@
 .about {
   padding-bottom: 94px;
+  padding-top: 0;
   @media screen and (max-width: 1199px) {
     display: none;
   }
@@ -13,6 +14,3 @@
   display: flex;
   margin: -15px;
 }
-
-
-

@@ -74,8 +74,9 @@
   height: 100%;
   width: 100%;
   background-color: var(--accent-color);
-  display: block;
-  padding: 64px 24px;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
   position: absolute;
   top: 0;
   opacity: 0;
@@ -83,6 +84,27 @@
   transition: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: start;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding-top: 30px;
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
 
   .portfolio-card__link:focus &,
   .portfolio-card__link:hover & {

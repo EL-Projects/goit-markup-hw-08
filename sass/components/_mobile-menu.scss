@@ -42,7 +42,7 @@
   font-size: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -51,29 +51,30 @@
   &:focus {
     color: #2196f3;
   }
+
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
-.current {
-  color: var(--accent-color);
-}
 .mobile-menu-contacts__item:not(:last-child) {
   margin-bottom: 23px;
 }
 .mobile-menu-contacts__link-tel {
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 18px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 .mobile-menu-contacts__link-mail {
-  font-family: "Raleway", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 1.55;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -93,8 +94,8 @@
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: 1.122;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
