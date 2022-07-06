@@ -924,8 +924,7 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main@2x.jpg");
   }
 }
-
-.main__button {
+.main .main__button {
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -947,11 +946,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main__button:hover, .main__button:focus {
+.main .main__button:hover, .main .main__button:focus {
   background-color: var(--button-accent-color);
 }
-
-.main-head {
+.main .main-head {
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
@@ -963,8 +961,7 @@ body {
   max-width: 360px;
   margin-bottom: 30px;
 }
-
-.main__button {
+.main .main__button {
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -986,7 +983,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main__button:hover, .main__button:focus {
+.main .main__button:hover, .main .main__button:focus {
   background-color: var(--button-accent-color);
 }
 
