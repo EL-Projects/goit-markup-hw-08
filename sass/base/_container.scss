@@ -18,6 +18,9 @@
 
   .header & {
     display: flex;
+    @media screen and (max-width: 767px) {
+      height: 60px;
+    }
   }
 
   .footer & {

@@ -44,6 +44,11 @@
 .header .container {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .header .container {
+    height: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
